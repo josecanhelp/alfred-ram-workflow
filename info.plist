@@ -116,12 +116,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://ram.tighten.co/entries/{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -203,6 +205,8 @@ php search.php $query {var:token}</string>
 				</array>
 				<key>elselabel</key>
 				<string>donothing</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -218,6 +222,8 @@ php search.php $query {var:token}</string>
 				<false/>
 				<key>clipboardtext</key>
 				<string>https://ram.test/entries/{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
 				<key>transient</key>
 				<false/>
 			</dict>
@@ -271,6 +277,8 @@ php search.php $query {var:token}</string>
 				</array>
 				<key>elselabel</key>
 				<string>donothing</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -422,6 +430,8 @@ Run `ram` to search with a query of your choice.</string>
 			<integer>130</integer>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>token</key>
@@ -430,7 +440,7 @@ Run `ram` to search with a query of your choice.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>1.0</string>
 	<key>webaddress</key>
 	<string>https://josesoto.com</string>
 </dict>

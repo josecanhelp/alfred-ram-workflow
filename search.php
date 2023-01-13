@@ -19,7 +19,7 @@ $index = $client->getIndex('entries');
 $result = $index->search($searchQuery);
 
 $alfredItems = [];
-foreach ($result['hits'] as $entry) {
+foreach ($result->getHits() as $entry) {
   $alfredItems[] = new Item($entry['content'], $entry['author'], $entry['id']);
 }
 
